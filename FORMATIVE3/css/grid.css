@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* ===== CONTAINER GRID ===== */
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    max-width: 1200px;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* ===== HEADER ===== */
+header {
+    grid-area: header;
+    padding: 1rem;
+    width: 100%;
+}
+
+/* ===== MAIN CONTENT GRID ===== */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+/* ===== LEFT & RIGHT SECTIONS ===== */
+.left {
+    grid-column: 1;
+    padding: 1rem;
+}
+
+.right {
+    grid-column: 2;
+    padding: 1rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    grid-area: footer;
+    padding: 1rem;
+}
