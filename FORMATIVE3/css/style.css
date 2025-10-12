@@ -124,13 +124,12 @@ footer table {
 
 footer td, footer th {
     vertical-align: top;
-    font-size: clamp(0.9rem, 1vw, 1.1rem);
+    font-size: clamp(0.7rem, 0.9vw, 0.9rem);
 }
 
 footer ul {
     text-align: left;
     list-style-type: none;
-    font-size: clamp(0.7rem, 0.9vw, 0.9rem);
 }
 
 footer img {
