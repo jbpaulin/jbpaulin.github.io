@@ -63,11 +63,11 @@ footer {
 
 @media (max-width: 768px) {
   main {
-    grid-template-columns: 1fr; /* Stack them vertically */
+    grid-template-columns: 1fr;
   }
 
   .left, .right {
-    grid-column: 1; /* Make both take full width */
+    grid-column: 1;
     padding: 1rem;
   }
 }
