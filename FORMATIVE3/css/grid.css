@@ -5,6 +5,7 @@
 }
 
 /* ===== BODY ===== */
+
 body {
     min-height: 100vh;
     display: flex;
@@ -71,9 +72,4 @@ footer {
         grid-column: 1;
         padding: 1rem;
   }
-    footer table {
-        border-spacing: 1vw 0.3vw; /* smaller gaps */
-        margin-left: 0.5rem;
-        font-size: 0.8rem; /* shrink font size */
-    }
 }
