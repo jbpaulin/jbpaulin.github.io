@@ -17,12 +17,12 @@ header {
 
 h1 {
     margin-bottom: 0;
-    font-size: 2vw;
+    font-size: clamp(1.5rem, 2vw, 3rem);
     padding-bottom: 0.5rem;
 }
 
 nav a {
-    font-size: 1vw;
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
     color: white;
     text-decoration: none;
     margin: 0 2vw;
@@ -30,17 +30,17 @@ nav a {
 
 nav a:hover {
     font-style: italic;
-    color: gray
+    color: gray;
 }
 
 h2 {
-    font-size: 2vw;
+    font-size: clamp(1.2rem, 2vw, 2rem);
     margin-top: 1rem;
     margin-bottom: 0.5rem;
 }
 
 h3 {
-    font-size: 1.5vw;
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
@@ -58,7 +58,7 @@ h3 {
 }
 
 .left p {
-    font-size: 1.2vw;
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
 }
 
 /* ===== RIGHT SECTION ===== */
@@ -67,7 +67,8 @@ h3 {
     background-color: #f5f5f5;
 }
 
-.right h2, h3 {
+.right h2,
+.right h3 {
     text-align: center;
 }
 
@@ -96,6 +97,7 @@ footer h2 {
     margin-top: 1rem;
     margin-left: 2rem;
     margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 1.8vw, 2rem);
 }
 
 footer table {
@@ -106,17 +108,21 @@ footer table {
     vertical-align: top;
 }
 
-footer td, footer th {
+footer td,
+footer th {
     vertical-align: top;
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
 }
 
 footer ul {
     text-align: left;
     list-style-type: none;
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
 }
 
 footer a {
     font-weight: bold;
     color: white;
     text-decoration: none;
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
 }
