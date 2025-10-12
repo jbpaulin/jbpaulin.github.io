@@ -60,3 +60,13 @@ footer {
     grid-area: footer;
     padding: 1rem;
 }
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr; /* Stack them vertically */
+  }
+
+  .left, .right {
+    grid-column: 1; /* Make both take full width */
+    padding: 1rem;
+  }
