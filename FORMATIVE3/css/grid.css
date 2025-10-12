@@ -12,6 +12,7 @@ body {
 }
 
 /* ===== CONTAINER ===== */
+
 .container {
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -25,12 +26,14 @@ body {
 }
 
 /* ===== HEADER ===== */
+
 header {
     grid-area: header;
     padding: 1rem;
 }
 
 /* ===== MAIN ===== */
+
 main {
     grid-area: main;
     display: grid;
@@ -40,17 +43,19 @@ main {
 }
 
 /* ===== LEFT, RIGHT ===== */
+
 .left {
     grid-column: 1;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .right {
     grid-column: 2;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 /* ===== FOOTER ===== */
+
 footer {
     grid-area: footer;
     padding: 1rem;
