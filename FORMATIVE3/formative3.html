@@ -3,46 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS STYLES</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="grid.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Student Specialization Portfolio | Jonah Paulin</title>
 </head>
+
 <body>
     <div class="container">
         <header>
-            <h1>CSS STYLES</h1>
+            <h1>STUDENT SPECIALIZATION PORTFOLIO | JONAH PAULIN</h1>
             <nav>
-                <a href="#FONTS">FONTS & COLORS</a>
-                <a href="#CUSTOM">CUSTOM TEXT & SPACING</a>
-                <a href="#BORDER">BORDER, MARGIN, & ALIGNMENT</a>
-                <a href="#FOOTER">FOOTER</a>
+                <a href="#ABOUT ME">ABOUT ME</a>
+                <a href="#PROJECTS">PROJECTS</a>
+                <a href="#CONTACTS">CONTACTS</a>
             </nav>
         </header>
         <main>
-            <section id="FONTS" class="left">
-                <h2>FONTS & COLORS</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo minus laborum mollitia quod molestiae ipsa, perferendis enim consequuntur modi, ullam aliquam expedita culpa minima qui beatae excepturi! Sunt, reiciendis cum.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, nulla. Exercitationem doloribus, totam voluptas ipsum, maiores placeat mollitia beatae inventore error aliquam ipsa autem cumque vitae rem officiis natus blanditiis.</p>
+            <section id="ABOUT ME" class="left">
+                <img src="mebass.jpg" alt="A photo of Jonah Paulin." height="200vw">
+                <h2>ABOUT ME</h2>
+                <p>Hi! My name is Jonah Paulin. I am currently a student of Far Eastern University Institute of Technology taking a Bachelor's Degree in Multimedia Arts. While I am studying both Digital Film and Animation in my program, I aim to work in the animation industry after graduating.</p>
             </section>
-            <section id="CUSTOM" class="right">
-                <h2>CUSTOM TEXT & SPACING</h2>
-                <ul>
-                    <li> VERANDA</li>
-                    <li> TIMES NEW ROMAN</li>
-                    <li>COURIER</li>
-                    <li> LUCIDA CONSOLE</li>
-                </ul>
-            </section>
-            <section id="BORDER">
-                <h2>BORDER, MARGIN, & ALIGNMENT</h2>
-                <img src="elmo.gif" alt="elmo raging with fire blazing in the background" height="200px">
+            <section id="PROJECTS" class="right">
+                <h2>PROJECTS</h2>
+                <h3>ANIMATION</h3>
+                <video height="250vw" autoplay muted loop>
+                    <source src="ANIMATION.mp4" type="video/mp4">
+                </video>
+                <video height="250vw" autoplay muted loop>
+                    <source src="ANIMATION2.mp4" type="video/mp4">
+                </video>
+                <h3>ILLUSTRATION</h3>
+                <img src="ILLUSTRATION1.png" alt="A digital illustration by Jonah Paulin in the art style Art Nouveau of the novel Heaven Official's Blessing by Mò Xiāng Tóng Xiù." height="400">
+                <img src="ILLUSTRATION2.png" alt="A black and white digital landscape painting by Jonah Paulin of a barren land with rocks of varying widths and heights as the only visible form of structure." height="400">
+                <h3>3D MODELLING</h3>
+                <img src="CHESS.jpg" alt="A 3D model of chess pieces." height="400">
+                <img src="sword-test.jpg" alt="A 3D model of a ninjato inspired sword with a red blade, black handle, and white cloth wrapped around the grip." height="400">
             </section>
         </main>
         <footer>
-            <section id="FOOTER">
-                <h2>FOOTER</h2>
-                <p> &copy; 2025 JONAH PAULIN</p>
+            <section id="CONTACTS">
+                <h2>CONTACTS</h2>
+                <table>
+                    <thead>
+                        <th>SOCIAL MEDIA</th>
+                        <th>E-MAIL</th>
+                        <th>MOBILE PHONE</th>
+                    </thead>
+                    <tbody>
+                        <td>
+                            <ul>
+                                <li>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <a href="https://instagram.com/_jcpaulin/" target="_blank">@_jcpaulin</a>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <a href="https://facebook.com/1OO2O3/" target="_blank">Jonah Paulin</a>
+                                </li>
+                             </ul>
+                        </td>
+                        <td>jbpaulin@fit.edu.ph</td>
+                        <td>+63 9XX XXX XXXX</td>
+                    </tbody>
+                </table>
+            </section>
         </footer>
     </div>
 </body>
+
 </html>

@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+    align-items: stretch;
+    background-color: #222222;
+}
+
+.container {
+    background-color: #222222;
+}
+
+/* ===== HEADER ===== */
+
+header {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 0;
+    font-size: clamp(1.5rem, 3vw, 3rem);
+    padding-bottom: 0.5rem;
+}
+
+nav a {
+    font-size: clamp(0.8rem, 1vw, 1.2rem);
+    color: white;
+    text-decoration: none;
+    margin: 0 2vw;
+}
+
+nav a:hover {
+    font-style: italic;
+    color: gray;
+}
+
+/* ===== LEFT ===== */
+
+.left {
+    background-color: #141414;
+    color: white;
+}
+
+.left img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+.left h2 {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.left p {
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+    text-align: center;
+}
+
+/* ===== RIGHT ===== */
+
+.right {
+    background-color: #141414;
+    color: white;
+}
+
+.right h2 {
+    font-size: clamp(1.30rem, 2.5vw, 2rem);
+    text-align: left;
+    margin-top: 0.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.right h3 {
+    font-size: clamp(.90rem, 1.5vw, 1.5rem);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.right video, .right img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    padding: 1rem;
+}
+
+/* ===== FOOTER ===== */
+
+footer {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+}
+
+footer h2 {
+    text-align: left;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: clamp(1.2rem, 1.8vw, 2rem);
+}
+
+footer table {
+    border-collapse: separate;
+    border-spacing: 3vw 0.5vw;
+    text-align: left;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    vertical-align: top;
+}
+
+footer td, footer th {
+    vertical-align: top;
+    font-size: clamp(0.7rem, 0.9vw, 0.9rem);
+}
+
+footer ul {
+    text-align: left;
+    list-style-type: none;
+}
+
+footer img {
+    width: 10px;
+    margin: 0 10px;
+    vertical-align: middle;
+}
+footer a:hover {
+    color: gray;
+    font-style: italic;
+}
+
+footer a {
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+}
