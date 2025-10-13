@@ -5,41 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS STYLES</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="grid.css">
 </head>
 <body>
-    <header>
-        <h1>CSS STYLES</h1>
-        <nav>
-            <a href="#FONTS">FONTS & COLORS</a>
-            <a href="#CUSTOM">CUSTOM TEXT & SPACING</a>
-            <a href="#BORDER">BORDER, MARGIN, & ALIGNMENT</a>
-            <a href="#FOOTER">FOOTER</a>
-        </nav>
-    </header>
-    <main>
-        <section id="FONTS">
-            <h2>FONTS & COLORS</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo minus laborum mollitia quod molestiae ipsa, perferendis enim consequuntur modi, ullam aliquam expedita culpa minima qui beatae excepturi! Sunt, reiciendis cum.</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, nulla. Exercitationem doloribus, totam voluptas ipsum, maiores placeat mollitia beatae inventore error aliquam ipsa autem cumque vitae rem officiis natus blanditiis.</p>
-        </section>
-        <section id="CUSTOM">
-            <h2>CUSTOM TEXT & SPACING</h2>
-            <ul>
-                <li> VERANDA</li>
-                <li> TIMES NEW ROMAN</li>
-                <li>COURIER</li>
-                <li> LUCIDA CONSOLE</li>
-            </ul>
-        </section>
-        <section id="BORDER">
-            <h2>BORDER, MARGIN, & ALIGNMENT</h2>
-            <img src="elmo.gif" alt="elmo raging with fire blazing in the background" height="200px">
-        </section>
-    </main>
-    <footer>
-        <section id="FOOTER">
-            <h2>FOOTER</h2>
-            <p> &copy; 2025 JONAH PAULIN</p>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>CSS STYLES</h1>
+            <nav>
+                <a href="#FONTS">FONTS & COLORS</a>
+                <a href="#CUSTOM">CUSTOM TEXT & SPACING</a>
+                <a href="#BORDER">BORDER, MARGIN, & ALIGNMENT</a>
+                <a href="#FOOTER">FOOTER</a>
+            </nav>
+        </header>
+        <main>
+            <section id="FONTS" class="left">
+                <h2>FONTS & COLORS</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo minus laborum mollitia quod molestiae ipsa, perferendis enim consequuntur modi, ullam aliquam expedita culpa minima qui beatae excepturi! Sunt, reiciendis cum.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus, nulla. Exercitationem doloribus, totam voluptas ipsum, maiores placeat mollitia beatae inventore error aliquam ipsa autem cumque vitae rem officiis natus blanditiis.</p>
+            </section>
+            <section id="CUSTOM" class="right">
+                <h2>CUSTOM TEXT & SPACING</h2>
+                <ul>
+                    <li> VERANDA</li>
+                    <li> TIMES NEW ROMAN</li>
+                    <li>COURIER</li>
+                    <li> LUCIDA CONSOLE</li>
+                </ul>
+            </section>
+            <section id="BORDER">
+                <h2>BORDER, MARGIN, & ALIGNMENT</h2>
+                <img src="elmo.gif" alt="elmo raging with fire blazing in the background" height="200px">
+            </section>
+        </main>
+        <footer>
+            <section id="FOOTER">
+                <h2>FOOTER</h2>
+                <p> &copy; 2025 JONAH PAULIN</p>
+        </footer>
+    </div>
 </body>
 </html>

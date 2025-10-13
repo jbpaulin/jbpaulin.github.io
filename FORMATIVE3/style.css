@@ -2,41 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} /* reset default margin and padding for all elements so the design is consistent in different browsers. also makes the header background reach the edges*/
+}
 
 /* ===== BODY ===== */
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #1b1b1b;
+    background-color: #444444;
     color: #ffffff;
-    line-height: 1.6;
-} /* base styles for the entire webpage so everything is consistent */
+    justify-content: center;
+    align-items: stretch;
+}
+
+.container {
+    background-color: #1b1b1b;
+}
 
 /* ===== HEADER & NAV ====== */
 
 header {
     background: darkred;
     color: #ffffff;
-    padding: 15px 0;
     text-align: center;
     position: sticky;
     top: 0;
-} /* styles for header to have background with color. position to make the header stay on screen even when scrolled down the webpage*/
+}
 
 h1 {
     margin-bottom: -5px;
-} /* style to make the heading closer to the navigation links */
+}
 
 nav a {
-    font-size: 12px;
+    font-size: 1.5vw;
     font-weight: bold;
     color: white;
     text-decoration: none;
     margin: 0 10px;
-} /* styles for navigation links to fit the header h1 */
+}
 
-/* hover effect for navigation links because it's cool lmao */
 nav a:hover {
     font-style: italic;
     color: gray
@@ -46,13 +49,13 @@ nav a:hover {
 
 main section {
     padding: 10px 20px;
-} /* styles for sections in main so the spacing is consistent */
+}
 
 h2 {
     font-style: italic;
     margin-top: 20px;
     margin-bottom: 5px;
-} /* styles for all <h2> for consistency and avoiding repetition when done per h2 */
+}
 
 /* ===== #FONT ===== */
 
@@ -60,7 +63,7 @@ h2 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     color: rgb(226, 230, 173);
     margin-bottom: 5px;
-} /*styles with 2 paragraphs with different colorrs and fonts. margin for space in between */
+}
 
 #FONTS p:last-of-type {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -72,18 +75,18 @@ h2 {
 ul {
     list-style-type: none;
     margin-left: 20px;
-} /*styles to change my marker/bullet and make all of them not too close to the left side of the screen*/
+}
 
 li::before {
     content: "✦";
     font-size: 12px;
-} /* for custom bullet point for list items because i like stars lol */
+}
 
 li:first-of-type {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     color: rgb(228, 82, 184);
-} /* using different fonts, sizes, colors, and spacing for list items*/
+}
 
 li:nth-of-type(2) {
     font-family: 'Times New Roman', Times, serif;
@@ -110,7 +113,7 @@ li:nth-of-type(4) {
 
 #BORDER h2 {
     text-align: center;
-} /* align text to center to be consistent with the image */
+}
 
 #BORDER img {
     border: 5px solid rgb(187, 8, 8);
@@ -118,22 +121,27 @@ li:nth-of-type(4) {
     display: block;
     margin-left: auto;
     margin-right: auto;
-} /* styles for image to have border, margin, and alignment */
+}
 
 /* ===== FOOTER ===== */
 
+footer {
+    background: darkred;
+    color: #ffffff;
+    text-align: center;
+}
 #FOOTER {
     padding: 10px 20px;
-} /* padding to keep it away from the edge on the right side */
+}
 
 #FOOTER h2 {
     font-style: italic;
     text-align: right;
     margin-bottom: 0px;
-} /* targeted style for footer h2 because i want it aligned to the center */
+}
 
 #FOOTER p {
     text-align: right;
     font-size: 10px;
     margin-bottom: 20px;
-} /* styles for footer paragraph to make it smaller and centered like its header */
+}
