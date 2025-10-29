@@ -55,8 +55,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             users.push(user);
 
-            console.log(users);
-
             document.getElementById("savedname").textContent = user.fullName;
             document.getElementById("savedgender").textContent = user.gender;
             document.getElementById("savedbirthday").textContent = user.birthday;
@@ -65,6 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
             document.querySelector(".fillupform").style.display = "none";
             document.querySelector(".saved").style.display = "block";
         }
+            console.log(users);
     });
 
     const button = document.querySelector(".fillupform button");
