@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const signupBtn = document.getElementById("signup");
+    const users = [];
 
     signupBtn.addEventListener("click", function () {
         const firstName = document.getElementById("firstname").value.trim();
@@ -45,14 +46,18 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         if (isValid) {
-            const fullName = `${firstName} ${middleName} ${lastName}`;
+            const user = {
+                fullName: `${firstName} ${middleName} ${lastName}`,
+                gender: gender,
+                birthday: birthday,
+                idNumber: idNumber.replace(/(\d{4})(\d{4})(\d{4})/, "$1-$2-$3")
+            };
+            users.push(user);
 
-            const formattedId = idNumber.replace(/(\d{4})(\d{4})(\d{4})/, "$1-$2-$3");
-
-            document.getElementById("savedname").textContent = fullName;
-            document.getElementById("savedgender").textContent = gender;
-            document.getElementById("savedbirthday").textContent = birthday;
-            document.getElementById("savedidnumber").textContent = formattedId;
+            document.getElementById("savedname").textContent = user.fullName;
+            document.getElementById("savedgender").textContent = user.gender;
+            document.getElementById("savedbirthday").textContent = user.birthday;
+            document.getElementById("savedidnumber").textContent = user.idNumber;
 
             document.querySelector(".fillupform").style.display = "none";
             document.querySelector(".saved").style.display = "block";
@@ -84,7 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-document.querySelector(".saved").style.display = "none";
+    document.querySelector(".saved").style.display = "none";
 
     const idInput = document.getElementById("idnumber");
     idInput.addEventListener("input", function () {
