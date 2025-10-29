@@ -52,6 +52,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 birthday: birthday,
                 idNumber: idNumber.replace(/(\d{4})(\d{4})(\d{4})/, "$1-$2-$3")
             };
+            
             users.push(user);
 
             document.getElementById("savedname").textContent = user.fullName;
