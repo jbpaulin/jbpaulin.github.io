@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <img src="MEDIA/Item_Mora.png">
+        <h1>NORTHLAND BANK</h1>
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+    </header>
+
+    <main>
+        <section class="fillupform">
+            <h2>SIGN UP</h2>
+            <div>
+                <label for="firstname">FIRST NAME</label>
+                <input type="text" name="firstname" id="firstname">
+                <p class="error" id="firstnameError"></p>
+            </div>
+            <div>  
+                <label for="middlename">MIDDLE NAME</label>
+                <input type="text" name="middlename" id="middlename">
+                <p class="error" id="middlenameError"></p>
+            </div>
+            <div>
+                <label for="lastname">LAST NAME</label>
+                <input type="text" name="lastname" id="lastname">
+                <p class="error" id="lastnameError"></p>
+            </div>
+            <div>  
+                <label for="gender">GENDER</label>
+                <select id="gender" name="gender">
+                    <option value="" disabled selected>SELECT YOUR GENDER</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+                <p class="error" id="genderError"></p>
+            </div>
+            <div>
+                <label for="birthday">BIRTHDAY</label>
+                <input type="date" name="birthday" id="birthday">
+                <p class="error" id="birthdayError"></p>
+            </div>
+            <div>
+                <label for="idnumber">NATIONAL ID</label>
+                <input type="text" name="idnumber" id="idnumber" maxlength="14">
+                <p class="error" id="idnumberError"></p>
+            </div>
+            <div>
+                <button type="button" id="signup">SAVE & SIGN UP</button>
+            </div>
+        </section>
+        <section class="saved">
+            <h2>INFORMATION</h2>
+            <table>
+                <tr>
+                    <th>FULL NAME</th>
+                    <td id="savedname"></td>
+                </td>
+                <tr>
+                    <th>GENDER</th>
+                    <td id="savedgender"></td>
+                </tr>
+                <tr>
+                    <th>BIRTHDAY</th>
+                    <td id="savedbirthday"></td>   
+                </tr>
+                <tr>
+                    <th>POSTAL ID</th>
+                    <td id="savedidnumber"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+            <section id="CONTACTS">
+                <table>
+                    <thead>
+                        <th>ABOUT NORTHLAND BANK</th>
+                        <th>PRIVACY AND SECURITY</th>
+                        <th>FOLLOW US</th>
+                    </thead>
+                    <tbody>
+                        <td>
+                            <ul>
+                                <li>About Us</li>
+                                <li>FAQ</li>
+                                <li>Terms and Conditions</li>
+                                <li>Help Center</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Privacy Policy</li>
+                                <li>Cookie Policy</li>
+                                <li>Terms of Use</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>
+                                    <i class="fa-brands fa-facebook"></i>
+                                    <i class="fa-brands fa-instagram"></i>
+                                    <i class="fa-brands fa-twitter"></i>
+                                </li>
+                                <li>
+                                    <i class="fa-brands fa-youtube"></i>
+                                    <i class="fa-brands fa-tiktok"></i>
+                                </li>
+                            </ul>
+                        </td>
+                </table>
+            </section>
+    </footer>
+
+    <script src="formative4.js"></script>
+</body>
+</html>
