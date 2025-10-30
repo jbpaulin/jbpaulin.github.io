@@ -37,7 +37,10 @@ document.addEventListener("DOMContentLoaded", function () {
             isValid = false;
         }
 
-        if (!/^\d+$/.test(idNumber)) {
+        if (!idNumber) {
+            document.getElementById("idnumberError").textContent = "National ID is required.";
+            isValid = false;
+        } else if (!/^\d+$/.test(idNumber)) {
             document.getElementById("idnumberError").textContent = "National ID must contain numbers only.";
             isValid = false;
         } else if (idNumber.length !== 12) {
