@@ -40,9 +40,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!idNumber) {
             document.getElementById("idnumberError").textContent = "National ID is required.";
             isValid = false; 
-        } else if (!/^\d+$/.test(idNumber)) {
-            document.getElementById("idnumberError").textContent = "National ID must contain numbers only.";
-            isValid = false;
         } else if (idNumber.length !== 12) {
             document.getElementById("idnumberError").textContent = "National ID must be exactly 12 digits.";
             isValid = false;
