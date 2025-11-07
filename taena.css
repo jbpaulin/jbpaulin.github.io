@@ -1,0 +1,24 @@
+/* Style the dropdown button */
+.dropbtn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: black;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px; /* space between text and arrow */
+}
+
+/* Rotate the arrow when dropdown is active */
+.dropdown.active .fa-caret-down {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+/* Add smooth hover effect for desktop */
+.dropbtn:hover {
+  background-color: #eee;
+  border-radius: 5px;
+}
