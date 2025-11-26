@@ -1,0 +1,152 @@
+/* Headings */
+h1, h2, h3 {
+ font-family: var(--font-serif);
+ color: #111;
+ letter-spacing: 0.5px;
+}
+
+h2 {
+ font-size: 2rem;
+ font-weight: 600;
+ margin-bottom: 1.5rem;
+ text-align: center;
+}
+
+.signup-blue {
+ background-color: #405d85 !important;
+ color: #fff !important;
+ border: none;
+ box-shadow: 0 2px 8px rgba(37,99,235,0.08);
+}
+.signup-blue:hover {
+ background-color: #071e54 !important;
+}
+
+nav button:hover {
+ background-color: #405d85;
+}
+
+/* Form */
+.fillupform {
+    max-width: 600px;
+    margin: 4rem auto;
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+}
+
+.fillupform div {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-family: var(--font-serif);
+}
+
+input,
+select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-family: var(--font-sans);
+    background: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 6px rgba(64, 93, 133, 0.3); /* subtle glow */
+}
+
+.error {
+    font-size: 0.85rem;
+    color: #c0392b;
+    margin-top: 0.25rem;
+}
+
+.fillupform button#signup {
+    display: block;
+    margin: 2rem auto 0 auto;
+    background-color: var(--accent);
+    color: #fff;
+    border: none;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.fillupform button#signup:hover {
+    background-color: #071e54;
+}
+
+/* Success Message */
+.signedup {
+ display: none;
+ text-align: center;
+ padding: 2rem;
+ background: #fff;
+ border-radius: 12px;
+ margin: 2rem auto;
+ max-width: 500px;
+ box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+ color: #111;
+}
+
+.signedup h2 {
+ color: #111;
+}
+
+/* Log in */
+.loginorsignup {
+ text-align: center;
+ margin-top: 2rem;
+}
+
+.loginorsignup p {
+ margin-bottom: 0.5rem;
+ font-size: 1rem;
+}
+
+.loginorsignup button {
+ background-color: #111;
+ color: #fff;
+ border: none;
+ margin-bottom: 3rem;
+ padding: 0.5rem 1rem;
+ font-weight: 600;
+ border-radius: 6px;
+ cursor: pointer;
+ transition: background 0.3s ease;
+}
+
+.loginorsignup button:hover {
+ background-color: var(--accent);
+}
+
+/* Responsiveness for mobile */
+@media (max-width: 600px) {
+ .fillupform {
+   padding: 1.5rem;
+ }
+
+ input,
+ select {
+   font-size: 0.95rem;
+ }
+
+ #signup {
+   width: 100%;
+ }
+}
